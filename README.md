@@ -68,7 +68,7 @@ What's almost ready :
 
 ➤ Sign up page
  
-* To be made : 
+To be made : 
 
 ➤ Set up Firebase correctly
 

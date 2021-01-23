@@ -57,7 +57,7 @@ This includes :
 
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us involve the application
 
-Ready : 
+* What's almost ready : 
 
  ➤ Welcome page with splash screen
  
@@ -65,7 +65,11 @@ Ready :
  
  ➤ Sign up page
  
+* To be made : 
 
+ ➤ Set up Firebase correctly
+ ➤ Home screen
+ ➤ Messages screen
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#templates)
 
@@ -75,9 +79,11 @@ You will find here images of the screens made (or to be made)
 Don't hesitate to hop in ! 
 
 
-| Name |            Link                 |
-|------|---------------------------------|
-| Home | https://i.imgur.com/77twCd4.png |
+| Name     |            Link                 |
+|----------|---------------------------------|
+| Home     | https://i.imgur.com/77twCd4.png |
+|----------|---------------------------------|
+| Messages | https://i.imgur.com/77twCd4.png |
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)

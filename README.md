@@ -75,9 +75,9 @@ You will find here images of the screens made (or to be made)
 Don't hesitate to hop in ! 
 
 
-| Name | Description     |
-|------|-----------------|
-|      | Default content |
+| Name |            Link                 |
+|------|---------------------------------|
+| Home | https://i.imgur.com/77twCd4.png |
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)

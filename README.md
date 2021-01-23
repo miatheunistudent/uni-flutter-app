@@ -3,21 +3,18 @@
 </p>
 <h1 align="center">Uni</h1>
 <p align="center">
-		<a href="https://npmcharts.com/compare/@uni-flutter-app/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@miatheunistudent/readme.svg" height="20"/></a>
-<a href="https://www.npmjs.com/package/@uni-flutter-app/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/miatheunistudent/readme.svg" height="20"/></a>
-<a href="https://github.com/miatheunistudent/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/miatheunistudent/readme.svg" height="20"/></a>
 <a href="https://github.com/miatheunistudent/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
 	</p>
 
 <p align="center">
   <b>Welcome to this amazing community project, created to build an amazing app for us students</b></br>
-  <sub>Hop in and help us create a safe community students app, where students can talk and share their matters and get updated about Uni life and decisions easily during this lockdown period and even after.<sub>
+  <sub>Hop in and help us create a safe community students app, where students can talk and share their matters and get updated about Uni life and decisions easily during this lockdown period and even after. You're all to know we're under lockdown in Europe, and I'm trying to build a safe hub, where students can help each other and talk freely.<sub>
 </p>
 
 <br />
 
 * **Safe**: Only verified students (with emails) could use the app!
-* **Powerful**: Let's gather a safe place for us students without being worried about trolls and all the bad social matters
+* **Powerful**: Let's gather a safe place for us students without being worried about trolls and all the bad social side.
 * **Awesome**: Easy to use, universities news on the go from the home page and so on!
 
 <details>
@@ -55,7 +52,7 @@ This includes :
 
 ## ➤ Getting Started 
 
-This getting started guide is how far we are from. Anyone is welcomed to hop in and help us involve the application
+This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
 
 * **Polices used** : Merriweather, SF Pro
 * **Icons used** : In the Assets folder 

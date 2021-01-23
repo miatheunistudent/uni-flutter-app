@@ -58,7 +58,7 @@ This includes :
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us involve the application
 
 * **Polices used** : Merriweather, SF Century pro
-* **Icons used** : In the file 
+* **Icons used** : In the Assets folder 
 
 What's almost ready : 
 

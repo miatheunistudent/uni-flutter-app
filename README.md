@@ -28,7 +28,7 @@
 * [➤ Description](#-description)
 * [➤ Getting Started](#-getting-started)
 * [➤ Designs](#Designs)
-* [➤ How can I support you?](#Q&A)
+* [➤ How can I help you?](#Q&A)
 * [➤ Contributors](#-contributors-1)
 * [➤ License](#-license-1)
 </details>

@@ -62,15 +62,15 @@ This getting started guide is how far we are from. Anyone is welcomed to hop in 
 
 * What's almost ready : 
 
- ➤ Welcome page with splash screen
- ➤ Login page
- ➤ Sign up page
+*  ➤ Welcome page with splash screen
+*  ➤ Login page
+*  ➤ Sign up page
  
 * To be made : 
 
- ➤ Set up Firebase correctly
- ➤ Home screen
- ➤ Messages screen
+*  ➤ Set up Firebase correctly
+*  ➤ Home screen
+*  ➤ Messages screen
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#templates)
 

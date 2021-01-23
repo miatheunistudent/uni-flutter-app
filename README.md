@@ -30,8 +30,8 @@
 
 * [➤ Description](#-description)
 * [➤ Getting Started](#-getting-started)
-* [➤ Designs](#-ui-ux-designs)
-* [How can I support you?](#how-can-i-support-you)
+* [➤ Designs](#designs)
+* [➤ How can I support you?](#how-can-i-support-you)
 * [➤ Contributors](#-contributors-1)
 * [➤ License](#-license-1)
 </details>

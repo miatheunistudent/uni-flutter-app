@@ -27,8 +27,8 @@
 
 * [➤ Description](#-description)
 * [➤ Getting Started](#-getting-started)
-* [➤ Designs](#designs)
-* [➤ How can I support you?](#how-can-i-support-you)
+* [➤ Designs](#Designs)
+* [➤ How can I support you?](#Q&A)
 * [➤ Contributors](#-contributors-1)
 * [➤ License](#-license-1)
 </details>
@@ -104,7 +104,7 @@ Licensed under [MIT](https://opensource.org/licenses/MIT).
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#faq)
 
-## ➤ FAQ
+## ➤ Q&A
 
 ### How can I get involved?
 

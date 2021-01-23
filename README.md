@@ -83,7 +83,7 @@ Don't hesitate to hop in !
 |----------|---------------------------------|
 | Home     | https://i.imgur.com/77twCd4.png |
 |----------|---------------------------------|
-| Messages | https://i.imgur.com/77twCd4.png |
+| Messages | https://imgur.com/N1isGsF.png   |
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)

@@ -3,11 +3,9 @@
 </p>
 <h1 align="center">Uni</h1>
 <p align="center">
-		<a href="https://npmcharts.com/compare/@miatheunistudent/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@appnest/readme.svg" height="20"/></a>
-<a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@miatheunistudent/readme.svg" height="20"/></a>
-<a href="https://david-dm.org/miatheunistudent/readme"><img alt="Dependencies" src="https://img.shields.io/david/andreasbm/readme.svg" height="20"/></a>
-<a href="https://github.com/miatheunistudent/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/andreasbm/readme.svg" height="20"/></a>
-<a href="https://github.com/badges/shields"><img alt="Custom badge" src="https://img.shields.io/badge/custom-badge-f39f37.svg" height="20"/></a>
+		<a href="https://npmcharts.com/compare/@miatheunistudent/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@miatheunistudent/readme.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@miatheunistudent/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/miatheunistudent/readme.svg" height="20"/></a>
+<a href="https://github.com/miatheunistudent/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/miatheunistudent/readme.svg" height="20"/></a>
 <a href="https://github.com/miatheunistudent/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
 	</p>
 

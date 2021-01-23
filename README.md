@@ -57,12 +57,13 @@ This includes :
 
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us involve the application
 
+Polices used : Merriweather, SF Century pro
+Icons used : In the file 
+
 * What's almost ready : 
 
  ➤ Welcome page with splash screen
- 
  ➤ Login page
- 
  ➤ Sign up page
  
 * To be made : 

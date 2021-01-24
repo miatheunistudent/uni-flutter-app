@@ -60,14 +60,14 @@ This getting started guide is how far we are from. Anyone is welcomed to hop in 
 * **Polices used** : Merriweather, SF Pro
 * **Icons used** : In the Assets folder :)
 
-Ready : 
+What's almost ready :
 
- ➤ Welcome page with splash screen
- 
- ➤ Login page
- 
- ➤ Sign up page
- 
+➤ Welcome page with splash screen
+
+➤ Login page
+
+➤ Sign up page
+
 To be made :
 
  ➤ Edit sign-up page and add a dropdown list to select from .json list of uni

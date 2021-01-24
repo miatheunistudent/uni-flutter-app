@@ -55,7 +55,10 @@ This includes :
 
 ## ➤ Getting Started 
 
-This getting started guide is how far we are from. Anyone is welcomed to hop in and help us involve the application
+This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
+
+* **Polices used** : Merriweather, SF Pro
+* **Icons used** : In the Assets folder :)
 
 Ready : 
 

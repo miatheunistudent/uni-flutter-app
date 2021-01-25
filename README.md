@@ -3,9 +3,12 @@
 </p>
 <h1 align="center">Uni</h1>
 <p align="center">
+<<<<<<< HEAD
 		<a href="https://npmcharts.com/compare/@uni-flutter-app/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@miatheunistudent/readme.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@uni-flutter-app/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/miatheunistudent/readme.svg" height="20"/></a>
 <a href="https://github.com/miatheunistudent/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/miatheunistudent/readme.svg" height="20"/></a>
+=======
+>>>>>>> parent of 90a3ade... first update
 <a href="https://github.com/miatheunistudent/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
 	</p>
 
@@ -20,7 +23,10 @@
 * **Powerful**: Let's gather a safe place for us students without being worried about trolls and all the bad social side.
 * **Awesome**: Easy to use, universities news on the go from the home page and so on!
 
+<<<<<<< HEAD
 * **Inspirations**: Inspired by [Mex](https://www.orizon.co/mex) :) !
+=======
+>>>>>>> parent of 90a3ade... first update
 <details>
 <summary>📖 Table of Contents</summary>
 <br />
@@ -31,8 +37,13 @@
 
 * [➤ Description](#-description)
 * [➤ Getting Started](#-getting-started)
+<<<<<<< HEAD
 * [➤ Designs](#designs)
 * [➤ How can I support you?](#how-can-i-support-you)
+=======
+* [➤ Designs](#Designs)
+* [➤ How can I help you?](#Q&A)
+>>>>>>> parent of 90a3ade... first update
 * [➤ Contributors](#-contributors-1)
 * [➤ License](#-license-1)
 </details>
@@ -59,15 +70,22 @@ This includes :
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
 
 * **Polices used** : Merriweather, SF Pro
+<<<<<<< HEAD
 * **Icons used** : In the Assets folder :)
 
 What's almost ready :
+=======
+* **Icons used** : In the Assets folder 
+
+What's almost ready : 
+>>>>>>> parent of 90a3ade... first update
 
 ➤ Welcome page with splash screen
 
 ➤ Login page
 
 ➤ Sign up page
+<<<<<<< HEAD
 
 To be made :
 
@@ -78,6 +96,16 @@ To be made :
  ➤ Messages page
  
  ➤ Profile page
+=======
+ 
+To be made : 
+
+➤ Set up Firebase correctly
+
+➤ Home screen
+
+➤ Messages screen
+>>>>>>> parent of 90a3ade... first update
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#templates)
 
@@ -90,7 +118,12 @@ Don't hesitate to hop in !
 | Name     |            Link                 |
 |----------|---------------------------------|
 | Home     | https://i.imgur.com/77twCd4.png |
+<<<<<<< HEAD
 | Messages | https://i.imgur.com/N1isGsF.png |
+=======
+|----------|---------------------------------|
+| Messages | https://imgur.com/N1isGsF.png   |
+>>>>>>> parent of 90a3ade... first update
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)
@@ -109,11 +142,19 @@ Licensed under [MIT](https://opensource.org/licenses/MIT).
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#faq)
 
+<<<<<<< HEAD
 ## ➤ FAQ
 
 ### How can I get involved?
 
 Create an issue or pull-request and help us improve the app.
+=======
+## ➤ Q&A
+
+### How can I get involved?
+
+Create an issue or pull-request.
+>>>>>>> parent of 90a3ade... first update
 
 ### How can I support you?
 

@@ -18,7 +18,7 @@ class _SignUpFormState extends State<SignUpForm> {
   String email;
   String password;
   String uni;
-  String confirm_password;
+  String conform_password;
   bool remember = false;
   final List<String> errors = [];
 
@@ -67,14 +67,14 @@ class _SignUpFormState extends State<SignUpForm> {
   TextFormField buildConformPassFormField() {
     return TextFormField(
       obscureText: true,
-      onSaved: (newValue) => confirm_password = newValue,
+      onSaved: (newValue) => conform_password = newValue,
       onChanged: (value) {
         if (value.isNotEmpty) {
           removeError(error: kPassNullError);
-        } else if (value.isNotEmpty && password == confirm_password) {
+        } else if (value.isNotEmpty && password == conform_password) {
           removeError(error: kMatchPassError);
         }
-        confirm_password = value;
+        conform_password = value;
       },
       validator: (value) {
         if (value.isEmpty) {

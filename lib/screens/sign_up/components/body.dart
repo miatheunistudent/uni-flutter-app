@@ -3,6 +3,7 @@ import 'package:unistudentapp/constants.dart';
 import 'package:unistudentapp/size_config.dart';
 import 'sign_up_form.dart';
 
+
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

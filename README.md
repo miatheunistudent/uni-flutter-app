@@ -62,17 +62,21 @@ This getting started guide is how far we are from. Anyone is welcomed to hop in 
 
 What's almost ready :
 
-➤ Welcome page with splash screen
+➤ Welcome page with splash screen ( Find images for splash screen)
 
 ➤ Login page
 
 ➤ Sign up page
 
+➤ Forgot password page
+
 To be made :
+
+ ➤ Implement Firebase
 
  ➤ Edit sign-up page and add a dropdown list to select from .json list of uni
 
- ➤ Home page
+ ➤ Home page (news, posts feed like template)
  
  ➤ Messages page
  

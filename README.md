@@ -20,6 +20,7 @@
 * **Powerful**: Let's gather a safe place for us students without being worried about trolls and all the bad social side.
 * **Awesome**: Easy to use, universities news on the go from the home page and so on!
 
+* **Inspirations**: Inspired by [Mex](https://www.orizon.co/mex) :) !
 <details>
 <summary>📖 Table of Contents</summary>
 <br />

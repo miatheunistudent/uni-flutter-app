@@ -94,7 +94,7 @@ Figma file : https://www.figma.com/file/iAYXkVJbIJ273gnuGgQ73u/Uni?node-id=0%3A1
 
 | Name     |            Link                 |
 |----------|---------------------------------|
-| Home     | https://i.imgur.com/77twCd4.png |
+| Home     | https://imgur.com/ylpGmDK.png   |
 | Messages | https://i.imgur.com/N1isGsF.png |
 
 

@@ -57,8 +57,9 @@ This includes :
 
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
 
-* **Polices used** : Merriweather, SF Pro
+* **Police used** : Merriweather, SF Pro
 * **Icons used** : In the Assets folder :)
+* **Main colors used** : 002251, 0041C4
 
 What's almost ready :
 

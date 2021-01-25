@@ -1,5 +1,5 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><p align="center">
-  <img src="https://imgur.com/a/1kNkkWt.png" alt="Logo" width="400" height="400" />
+  <img src="https://imgur.com/cTHWMvu.png" alt="Logo" width="400" height="400" />
 </p>
 <h1 align="center">Uni</h1>
 <p align="center">

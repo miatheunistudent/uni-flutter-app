@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unistudentapp/screens/sign_in/components/no_account_text.dart';
 import '../../../size_config.dart';
 import 'sign_form.dart';
+import '../../home/home_screen.dart';
 
 class Home extends StatelessWidget{
   @override

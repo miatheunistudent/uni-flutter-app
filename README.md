@@ -57,6 +57,8 @@ This includes :
 
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
 
+Join the Discord server here : https://discord.gg/93gDcmqABV
+
 * **Police used** : Merriweather, SF Pro
 * **Icons used** : In the Assets folder :)
 * **Main colors used** : 002251, 0041C4

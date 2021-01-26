@@ -57,7 +57,7 @@ This includes :
 
 This getting started guide is how far we are from. Anyone is welcomed to hop in and help us improve the application.
 
-Join the Discord server here : https://discord.gg/93gDcmqABV
+Join the Discord server here : [Discord Server](https://discord.gg/93gDcmqABV)
 
 * **Police used** : Merriweather, SF Pro
 * **Icons used** : In the Assets folder :)
@@ -92,7 +92,7 @@ To be made :
 You will find here images of the screens made (or to be made)
 Don't hesitate to hop in ! 
 
-Figma file : https://www.figma.com/file/iAYXkVJbIJ273gnuGgQ73u/Uni?node-id=0%3A1
+Figma file : [Figma template](https://www.figma.com/file/iAYXkVJbIJ273gnuGgQ73u/Uni?node-id=0%3A1)
 
 | Name     |            Link                 |
 |----------|---------------------------------|

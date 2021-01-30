@@ -26,7 +26,7 @@ class HomeHeader extends StatelessWidget {
             children: [
               IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/map.svg",
+                  "assets/icons/location.svg",
                   color: MenuState.home == selectedMenu
                       ? kPrimaryColor
                       : inActiveIconColor,

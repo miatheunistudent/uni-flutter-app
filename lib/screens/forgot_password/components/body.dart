@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_in/components/custom_suffix_icon.dart';
-import 'package:unistudentapp/screens/sign_in/components/default_button.dart';
-import 'package:unistudentapp/screens/sign_in/components/form_error.dart';
-import 'package:unistudentapp/screens/sign_in/components/no_account_text.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
+import 'package:uniapp/screens/sign_in/components/default_button.dart';
+import 'package:uniapp/screens/sign_in/components/form_error.dart';
+import 'package:uniapp/screens/sign_in/components/no_account_text.dart';
+import 'package:uniapp/size_config.dart';
 
 import '../../../constants.dart';
 
@@ -88,8 +88,6 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             decoration: InputDecoration(
               labelText: "Email",
               hintText: "Enter your email",
-              // If  you are using latest version of flutter then lable text and hint text shown like this
-              // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Mail.svg"),
             ),
@@ -101,7 +99,6 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             text: "Continue",
             press: () {
               if (_formKey.currentState.validate()) {
-                // Do what you want to do
               }
             },
           ),

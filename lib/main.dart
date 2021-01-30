@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/routes.dart';
-import 'package:unistudentapp/screens/splash/splash_screen.dart';
-import 'package:unistudentapp/theme.dart';
-import 'package:autocomplete_textfield/autocomplete_textfield.dart';
+import 'package:uniapp/routes.dart';
+import 'package:uniapp/screens/splash/splash_screen.dart';
+import 'package:uniapp/theme.dart';
 
 void main() {
   runApp(MyApp());

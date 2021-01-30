@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_in/components/custom_suffix_icon.dart';
-import 'package:unistudentapp/screens/sign_in/components/default_button.dart';
-import 'package:unistudentapp/screens/sign_in/components/form_error.dart';
-import 'package:unistudentapp/screens/otp/otp_screen.dart';
+import 'package:uniapp/screens/login_success/login_success_screen.dart';
+import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
+import 'package:uniapp/screens/sign_in/components/default_button.dart';
+import 'package:uniapp/screens/sign_in/components/form_error.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -46,14 +46,14 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           SizedBox(height: getProportionateScreenHeight(30)),
           buildPhoneNumberFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          buildAddressFormField(),
+          buildUniFormField(),
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
             text: "continue",
             press: () {
               if (_formKey.currentState.validate()) {
-                Navigator.pushNamed(context, OtpScreen.routeName);
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
           ),
@@ -62,7 +62,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
     );
   }
 
-  TextFormField buildAddressFormField() {
+  TextFormField buildUniFormField() {
     return TextFormField(
       onSaved: (newValue) => uni = newValue,
       onChanged: (value) {
@@ -79,10 +79,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         return null;
       },
       decoration: InputDecoration(
-        labelText: "Address",
-        hintText: "Enter your phone address",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
+        labelText: "Uni",
+        hintText: "Enter your university name",
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon:
             CustomSuffixIcon(svgIcon: "assets/icons/Location point.svg"),
@@ -110,8 +108,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: InputDecoration(
         labelText: "Phone Number",
         hintText: "Enter your phone number",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Phone.svg"),
       ),
@@ -124,8 +120,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: InputDecoration(
         labelText: "Last Name",
         hintText: "Enter your last name",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/User.svg"),
       ),
@@ -151,8 +145,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       decoration: InputDecoration(
         labelText: "First Name",
         hintText: "Enter your first name",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/User.svg"),
       ),

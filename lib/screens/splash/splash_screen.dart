@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/splash/components/body.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/screens/splash/components/body.dart';
+import 'package:uniapp/size_config.dart';
 
 class SplashScreen extends StatelessWidget {
   static String routeName = "/splash";

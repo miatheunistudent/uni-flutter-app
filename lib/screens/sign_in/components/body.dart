@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_in/components/no_account_text.dart';
+import 'package:uniapp/screens/sign_in/components/no_account_text.dart';
 import '../../../size_config.dart';
 import 'sign_form.dart';
-import '../../home/home_screen.dart';
 
 class Home extends StatelessWidget{
   @override
@@ -31,7 +30,7 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text(
-                  "Connectez-vous",
+                  "Sign in",
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: getProportionateScreenWidth(28),

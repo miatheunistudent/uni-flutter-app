@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../size_config.dart';
-import 'package:unistudentapp/enums.dart';
-import 'package:unistudentapp/constants.dart';
+import 'package:uniapp/enums.dart';
+import 'package:uniapp/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:unistudentapp/screens/home/home_screen.dart';
+import 'package:uniapp/screens/home/home_screen.dart';
 
 
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/constants.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/constants.dart';
+import 'package:uniapp/size_config.dart';
 
 import 'complete_profile_form.dart';
 

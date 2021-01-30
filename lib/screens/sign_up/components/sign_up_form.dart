@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/complete_profile/complete_profile_screen.dart';
-import 'package:unistudentapp/screens/sign_in/components/custom_suffix_icon.dart';
-import 'package:unistudentapp/screens/sign_in/components/default_button.dart';
-import 'package:unistudentapp/screens/sign_in/components/form_error.dart';
+import 'package:uniapp/screens/complete_profile/complete_profile_screen.dart';
+import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
+import 'package:uniapp/screens/sign_in/components/default_button.dart';
+import 'package:uniapp/screens/sign_in/components/form_error.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/constants.dart';
-import 'package:unistudentapp/screens/sign_in/sign_in_screen.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/constants.dart';
+import 'package:uniapp/screens/sign_in/sign_in_screen.dart';
+import 'package:uniapp/size_config.dart';
 
 // This is the best practice
 import '../components/splash_content.dart';
@@ -17,16 +17,16 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to Uni, let's start!",
-      "image": "assets/images/splash_1.png"
+      // "image": "coming"
     },
     {
       "text":
           "Connect with other students in this safe place, and talk about Uni life",
-      "image": "assets/images/uni1.png"
+      // "image": "coming"
     },
     {
       "text": "Get the latest governmental news about universities, and helping numbers",
-      "image": "assets/images/uni2.png"
+      // "image": "coming"
     },
   ];
   @override
@@ -46,7 +46,6 @@ class _BodyState extends State<Body> {
                 },
                 itemCount: splashData.length,
                 itemBuilder: (context, index) => SplashContent(
-                  image: splashData[index]["image"],
                   text: splashData[index]['text'],
                 ),
               ),

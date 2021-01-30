@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/components/custom_bottom_nav_bar.dart';
-import 'package:unistudentapp/enums.dart';
+import 'package:uniapp/components/custom_bottom_nav_bar.dart';
+import 'package:uniapp/enums.dart';
 
 import 'components/body.dart';
 

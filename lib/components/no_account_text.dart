@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_up/sign_up_screen.dart';
+import 'package:uniapp/screens/sign_up/sign_up_screen.dart';
 
 import '../constants.dart';
 import '../size_config.dart';
@@ -15,7 +15,7 @@ class NoAccountText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Vous n'avez pas de compte? ",
+          "You don't have an account? ",
           style: TextStyle(fontSize: getProportionateScreenWidth(12),
             fontFamily: "Open_Sans",),
 
@@ -23,7 +23,7 @@ class NoAccountText extends StatelessWidget {
         GestureDetector(
           onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
           child: Text(
-            "Inscription",
+            "Sign in",
             style: TextStyle(
                 fontSize: getProportionateScreenWidth(12),
                 fontFamily: "Open_Sans",

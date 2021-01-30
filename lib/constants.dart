@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/size_config.dart';
 
 const kPrimaryColor = Color(0xFF003481);
 const kPrimaryLightColor = Color(0xFF7A869A);
@@ -25,14 +25,14 @@ const defaultDuration = Duration(milliseconds: 250);
 // Form Error
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
-const String kEmailNullError = "Merci de renseigner une adresse email";
-const String kInvalidEmailError = "Merci de renseigner un nom d'utilisateur valide";
-const String kPassNullError = "Merci de renseigner un mot de passe";
-const String kShortPassError = "Le mot de passe est trop court";
-const String kMatchPassError = "Le mot de passe saisi ne correspond pas";
-const String kNamelNullError = "Merci de renseigner un nom";
-const String kPhoneNumberNullError = "Veuillez entrer un numero de téléphone valide";
-const String kAddressNullError = "Veuillez renseigner une adresse mail";
+const String kEmailNullError = "Please enter an email address";
+const String kInvalidEmailError = "Please enter a valid email address";
+const String kPassNullError = "Please enter a password";
+const String kShortPassError = "Password is too short";
+const String kMatchPassError = "Password mismatched";
+const String kNamelNullError = "Please enter a name";
+const String kPhoneNumberNullError = "Please enter a valid phone number";
+const String kAddressNullError = "Please enter a valid university name";
 
 final otpInputDecoration = InputDecoration(
   contentPadding:

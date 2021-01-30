@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_in/components/default_button.dart';
-import 'package:unistudentapp/screens/home/home_screen.dart';
-import 'package:unistudentapp/size_config.dart';
+import 'package:uniapp/screens/sign_in/components/default_button.dart';
+import 'package:uniapp/screens/home/home_screen.dart';
+import 'package:uniapp/size_config.dart';
 
 class Body extends StatelessWidget {
   @override

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:unistudentapp/screens/sign_in/components/custom_suffix_icon.dart';
-import 'package:unistudentapp/screens/sign_in/components/form_error.dart';
-import 'package:unistudentapp/helper/keyboard.dart';
-import 'package:unistudentapp/screens/forgot_password/forgot_password_screen.dart';
-import 'package:unistudentapp/screens/login_success/login_success_screen.dart';
-import 'package:unistudentapp/auth/authentification_service.dart';
-import 'package:unistudentapp/screens/sign_in/components/default_button.dart';
+import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
+import 'package:uniapp/screens/sign_in/components/form_error.dart';
+import 'package:uniapp/screens/forgot_password/forgot_password_screen.dart';
+import 'package:uniapp/screens/login_success/login_success_screen.dart';
+import 'package:uniapp/screens/sign_in/components/default_button.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -59,13 +57,13 @@ class _SignFormState extends State<SignForm> {
                   });
                 },
               ),
-              Text("Se souvenir de moi"),
+              Text("Remember me"),
               Spacer(),
               GestureDetector(
                 onTap: () => Navigator.pushNamed(
                     context, ForgotPasswordScreen.routeName),
                 child: Text(
-                  "Mot de passe oublié?",
+                  "Forgotten password?",
                   style: TextStyle(decoration: TextDecoration.underline),
                 ),
               )
@@ -74,12 +72,11 @@ class _SignFormState extends State<SignForm> {
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(20)),
           DefaultButton(
-            text: "Continuer",
+            text: "Continue",
             press: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
                 // if all are valid then go to success screen
-                KeyboardUtil.hideKeyboard(context);
                 Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
@@ -116,10 +113,8 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       decoration: InputDecoration(
-        labelText: "Mot de passe",
-        hintText: "Entrez votre mot de passe",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
+        labelText: "Password",
+        hintText: "Please enter your password",
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
@@ -152,9 +147,7 @@ class _SignFormState extends State<SignForm> {
 
       decoration: InputDecoration(
         labelText: "Email",
-        hintText: "Entrez votre adresse email",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
+        hintText: "Please enter your email address",
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Mail.svg"),
 

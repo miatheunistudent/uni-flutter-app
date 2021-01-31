@@ -9,8 +9,9 @@ class SplashContent extends StatelessWidget {
     this.text,
     this.image,
   }) : super(key: key);
-  final String text, image;
+  // SplashContent({this.text, this.image});
 
+  final String text, image;
   @override
   Widget build(BuildContext context) {
     return Column(

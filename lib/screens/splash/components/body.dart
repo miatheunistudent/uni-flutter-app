@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uniapp/constants.dart';
 import 'package:uniapp/screens/sign_in/sign_in_screen.dart';
 import 'package:uniapp/size_config.dart';
-
+import 'dart:async';
 // This is the best practice
 import '../components/splash_content.dart';
 import '../components/default_button.dart';
@@ -13,7 +13,34 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  int currentPage = 0;
+  // int currentPage = 0;
+  //TODO:Implement connected to internet,slow internet and notify users.
+  // If User has already logged in this device on startup and boom Home Page.
+  // All during this loading time
+  //But we are using firebase,so no need to worry about the internet connection,all writes will be in queue and update when back online.
+  int _currentPage = 0;
+  PageController _pageController = PageController(
+    initialPage: 0,
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    Timer.periodic(Duration(seconds: 5), (Timer timer) {
+      if (_currentPage < 2) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+
+      _pageController.animateToPage(
+        _currentPage,
+        duration: Duration(milliseconds: 350),
+        curve: Curves.easeIn,
+      );
+    });
+  }
+
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to Uni, let's start!",
@@ -25,7 +52,8 @@ class _BodyState extends State<Body> {
       // "image": "coming"
     },
     {
-      "text": "Get the latest governmental news about universities, and helping numbers",
+      "text":
+          "Get the latest governmental news about universities, and helping numbers",
       // "image": "coming"
     },
   ];
@@ -39,14 +67,17 @@ class _BodyState extends State<Body> {
             Expanded(
               flex: 3,
               child: PageView.builder(
+                controller: _pageController,
+                allowImplicitScrolling: true,
                 onPageChanged: (value) {
                   setState(() {
-                    currentPage = value;
+                    _currentPage = value;
                   });
                 },
                 itemCount: splashData.length,
                 itemBuilder: (context, index) => SplashContent(
                   text: splashData[index]['text'],
+                  image: '',
                 ),
               ),
             ),
@@ -88,9 +119,9 @@ class _BodyState extends State<Body> {
       duration: kAnimationDuration,
       margin: EdgeInsets.only(right: 5),
       height: 6,
-      width: currentPage == index ? 20 : 6,
+      width: _currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? kPrimaryColor : Color(0xFFD8D8D8),
+        color: _currentPage == index ? kPrimaryColor : Color(0xFFD8D8D8),
         borderRadius: BorderRadius.circular(3),
       ),
     );

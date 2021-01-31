@@ -5,8 +5,6 @@ import 'package:uniapp/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uniapp/screens/home/home_screen.dart';
 
-
-
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
     Key key,
@@ -35,6 +33,7 @@ class HomeHeader extends StatelessWidget {
                     Navigator.pushNamed(context, HomeScreen.routeName),
               ),
               IconButton(
+                onPressed: () {},
                 icon: SvgPicture.asset(
                   "assets/icons/notif.svg",
                   color: MenuState.profile == selectedMenu

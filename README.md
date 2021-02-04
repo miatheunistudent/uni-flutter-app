@@ -125,8 +125,3 @@ Create an issue or pull-request and help us improve the app.
 ### How can I support you?
 
 There are lot's of ways to support me! I would be so happy if you hop in and help create an amazing app for us students ❤️
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
-
-## ➤ Contributors
-

@@ -3,16 +3,16 @@ import 'package:uniapp/screens/sign_in/components/no_account_text.dart';
 import '../../../size_config.dart';
 import 'sign_form.dart';
 
-class Home extends StatelessWidget{
+class Home extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage("assets/image1.png"), fit: BoxFit.cover),
-          ),
-        )
-    );
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage("assets/image1.png"), fit: BoxFit.cover),
+      ),
+    ));
   }
 }
 
@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text(
                   "Sign in",
-                    style: TextStyle(
+                  style: TextStyle(
                     color: Colors.black,
                     fontSize: getProportionateScreenWidth(28),
                     fontWeight: FontWeight.bold,
@@ -52,6 +52,5 @@ class Body extends StatelessWidget {
         ),
       ),
     );
-
   }
 }

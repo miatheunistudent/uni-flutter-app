@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uniapp/screens/home/home_screen.dart';
-
 import 'package:uniapp/constants.dart';
 import 'package:uniapp/enums.dart';
+import 'package:uniapp/screens/user_profile/user_profile.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -56,9 +56,16 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () {},
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/profile.svg"),
-                  onPressed: () {},
+                icon: SvgPicture.asset(
+                  "assets/icons/profile.svg",
+                  color: MenuState.profile == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,
                 ),
+                onPressed: () {
+                  Navigator.pushNamed(context, UserProfile.routeName);
+                },
+              ),
             ],
           )),
     );

@@ -31,6 +31,8 @@ const String kPassNullError = "Please enter a password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Password mismatched";
 const String kNamelNullError = "Please enter a name";
+const String kLastlNullError = "Please enter a surname";
+
 const String kPhoneNumberNullError = "Please enter a valid phone number";
 const String kAddressNullError = "Please enter a valid university name";
 
@@ -48,3 +50,5 @@ OutlineInputBorder outlineInputBorder() {
     borderSide: BorderSide(color: kTextColor),
   );
 }
+
+//Interest Screen Text

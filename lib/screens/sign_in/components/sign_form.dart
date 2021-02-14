@@ -6,7 +6,7 @@ import 'package:uniapp/screens/login_success/login_success_screen.dart';
 import 'package:uniapp/screens/sign_in/components/default_button.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
-
+import 'package:uniapp/services/auth.dart';
 
 class SignForm extends StatefulWidget {
   @override
@@ -14,11 +14,14 @@ class SignForm extends StatefulWidget {
 }
 
 class _SignFormState extends State<SignForm> {
+  final AuthService _auth = new AuthService();
+
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   String email;
   String password;
+  String error;
   bool remember = false;
   final List<String> errors = [];
 
@@ -73,7 +76,7 @@ class _SignFormState extends State<SignForm> {
           SizedBox(height: getProportionateScreenHeight(20)),
           DefaultButton(
             text: "Continue",
-            press: () {
+            press: () async {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
                 // if all are valid then go to success screen
@@ -99,9 +102,7 @@ class _SignFormState extends State<SignForm> {
         }
 
         return null;
-
       },
-
       validator: (value) {
         if (value.isEmpty) {
           addError(error: kPassNullError);
@@ -144,19 +145,12 @@ class _SignFormState extends State<SignForm> {
         }
         return null;
       },
-
       decoration: InputDecoration(
         labelText: "Email",
         hintText: "Please enter your email address",
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Mail.svg"),
-
       ),
-
     );
-
-
   }
-
-
 }

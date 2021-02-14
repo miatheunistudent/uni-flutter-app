@@ -44,17 +44,20 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to Uni, let's start!",
-      // "image": "coming"
+      "image": "assets/images/success.png",
+      //Temporary Image
     },
     {
       "text":
           "Connect with other students in this safe place, and talk about Uni life",
-      // "image": "coming"
+      "image": "assets/images/success.png",
+      //Temporary Image
     },
     {
       "text":
           "Get the latest governmental news about universities, and helping numbers",
-      // "image": "coming"
+      "image": "assets/images/success.png",
+      //Temporary Image
     },
   ];
   @override

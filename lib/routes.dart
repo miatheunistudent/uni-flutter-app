@@ -6,9 +6,10 @@ import 'package:uniapp/screens/sign_in/components/body.dart';
 import 'package:uniapp/screens/sign_in/sign_in_screen.dart';
 import 'package:uniapp/screens/splash/splash_screen.dart';
 import 'package:uniapp/screens/home/home_screen.dart';
-
+import 'package:uniapp/screens/user_profile/user_profile.dart';
+import 'screens/interests/interests_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
-
+import 'screens/user_profile/user_profile.dart';
 
 final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
@@ -18,4 +19,6 @@ final Map<String, WidgetBuilder> routes = {
   HomeScreen.routeName: (context) => HomeScreen(),
   SignUpScreen.routeName: (context) => SignUpScreen(),
   CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
+  InterestScreen.routeName: (context) => InterestScreen(),
+  UserProfile.routeName: (context) => UserProfile(),
 };

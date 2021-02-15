@@ -3,10 +3,9 @@ import 'package:uniapp/screens/complete_profile/complete_profile_screen.dart';
 import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
 import 'package:uniapp/screens/sign_in/components/default_button.dart';
 import 'package:uniapp/screens/sign_in/components/form_error.dart';
-
+import 'package:uniapp/services/auth.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
-
 
 class SignUpForm extends StatefulWidget {
   @override
@@ -14,6 +13,8 @@ class SignUpForm extends StatefulWidget {
 }
 
 class _SignUpFormState extends State<SignUpForm> {
+  final AuthService _auth = AuthService();
+
   final _formKey = GlobalKey<FormState>();
   String email;
   String password;
@@ -51,11 +52,20 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
             text: "Continuer",
-            press: () {
+            press: () async {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
                 // if all are valid then go to success screen
-                Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                dynamic result =
+                    await _auth.registerWithEmailAndPassword(email, password);
+                if (result == null) {
+                  //1.format firebase error,add/remove error.
+                  // 2.check user email if already registered,before registering with password
+                  errors.add(result);
+                } else {
+                  print(result);
+                  Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                }
               }
             },
           ),
@@ -89,7 +99,6 @@ class _SignUpFormState extends State<SignUpForm> {
       decoration: InputDecoration(
         labelText: "Confirmez le mot de passe",
         hintText: "Reconfirmez le mot de passe",
-
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
@@ -121,7 +130,6 @@ class _SignUpFormState extends State<SignUpForm> {
       decoration: InputDecoration(
         labelText: "Mot de passe",
         hintText: "Saisissez votre mot de passe",
-
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
@@ -153,12 +161,9 @@ class _SignUpFormState extends State<SignUpForm> {
       decoration: InputDecoration(
         labelText: "Email",
         hintText: "Enter your email",
-
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSuffixIcon(svgIcon: "assets/icons/Mail.svg"),
       ),
     );
-
-
   }
 }

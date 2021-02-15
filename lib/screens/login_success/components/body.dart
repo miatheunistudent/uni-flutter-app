@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uniapp/screens/sign_in/components/default_button.dart';
 import 'package:uniapp/screens/home/home_screen.dart';
 import 'package:uniapp/size_config.dart';
+import 'package:uniapp/screens/interests/interests_screen.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -28,7 +29,7 @@ class Body extends StatelessWidget {
           child: DefaultButton(
             text: "Back to home",
             press: () {
-              Navigator.pushNamed(context, HomeScreen.routeName);
+              Navigator.pushNamed(context, InterestScreen.routeName);
             },
           ),
         ),

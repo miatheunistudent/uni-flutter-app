@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678822084791",
+    "project_id": "uni-dev-c138a",
+    "storage_bucket": "uni-dev-c138a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678822084791:android:05673d73bb094decffcd32",
+        "android_client_info": {
+          "package_name": "com.mia.uniapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678822084791-8nshl3lbdrsscn6th2ccbvcbidnuvqpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1Ed2kCCXOGJpTaTr_q9zd8lr4ldXsU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678822084791-8nshl3lbdrsscn6th2ccbvcbidnuvqpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,11 +1,14 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:uniapp/screens/login_success/login_success_screen.dart';
 import 'package:uniapp/screens/sign_in/components/custom_suffix_icon.dart';
 import 'package:uniapp/screens/sign_in/components/default_button.dart';
 import 'package:uniapp/screens/sign_in/components/form_error.dart';
-
+import 'package:uniapp/services/database.dart';
+import 'package:provider/provider.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import 'package:uniapp/models/user.dart';
 
 class CompleteProfileForm extends StatefulWidget {
   @override
@@ -15,11 +18,11 @@ class CompleteProfileForm extends StatefulWidget {
 class _CompleteProfileFormState extends State<CompleteProfileForm> {
   final _formKey = GlobalKey<FormState>();
   final List<String> errors = [];
+
   String firstName;
   String lastName;
   String phoneNumber;
   String uni;
-
   void addError({String error}) {
     if (!errors.contains(error))
       setState(() {
@@ -36,6 +39,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
 
   @override
   Widget build(BuildContext context) {
+    final user = Provider.of<AppUser>(context);
     return Form(
       key: _formKey,
       child: Column(
@@ -51,9 +55,20 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
             text: "continue",
-            press: () {
+            press: () async {
               if (_formKey.currentState.validate()) {
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                dynamic result;
+                print(user.uid);
+                try {
+                  result = await DatabaseService(uid: user.uid)
+                      .updateUserData(firstName, lastName, phoneNumber, uni);
+                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                } catch (e) {
+                  print(e.toString());
+                }
+                if (result != null) {
+                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                }
               }
             },
           ),
@@ -68,8 +83,10 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       onChanged: (value) {
         if (value.isNotEmpty) {
           removeError(error: kAddressNullError);
+          uni = value;
+        } else {
+          return null;
         }
-        return null;
       },
       validator: (value) {
         if (value.isEmpty) {
@@ -95,8 +112,10 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       onChanged: (value) {
         if (value.isNotEmpty) {
           removeError(error: kPhoneNumberNullError);
+          phoneNumber = value;
+        } else {
+          return null;
         }
-        return null;
       },
       validator: (value) {
         if (value.isEmpty) {
@@ -117,6 +136,21 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   TextFormField buildLastNameFormField() {
     return TextFormField(
       onSaved: (newValue) => lastName = newValue,
+      onChanged: (value) {
+        if (value.isNotEmpty) {
+          removeError(error: kNamelNullError);
+          lastName = value;
+        } else {
+          return null;
+        }
+      },
+      validator: (value) {
+        if (value.isEmpty) {
+          addError(error: kNamelNullError);
+          return "";
+        }
+        return null;
+      },
       decoration: InputDecoration(
         labelText: "Last Name",
         hintText: "Enter your last name",
@@ -132,8 +166,10 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       onChanged: (value) {
         if (value.isNotEmpty) {
           removeError(error: kNamelNullError);
+          firstName = value;
+        } else {
+          return null;
         }
-        return null;
       },
       validator: (value) {
         if (value.isEmpty) {
